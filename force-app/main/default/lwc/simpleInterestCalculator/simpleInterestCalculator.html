@@ -1,0 +1,19 @@
+<template>
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="12" padding="around-medium">
+            <lightning-input label="Enter Principal" onchange={principalChangeHandler} type="number"></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-medium">
+            <lightning-input label="Enter No Of Years" onchange={timeChangeHandler} type="number"></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-medium">
+            <lightning-input label="Enter Rate Of Interest" onchange={rateChangeHandler} type="number"></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-medium">
+            <lightning-button label="Calculate SI" icon-position="center" onclick={calculateSIHandler} ></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" padding="around-medium">
+            <lightning-formatted-text value={currentOutput} ></lightning-formatted-text>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Shape Calculator">
+        <lightning-layout-item size="12"  >
+            <lightning-input type="number" class="add-padding" label="Enter side of the square" onchange={sideChangeHandler}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="12"  >
+            <lightning-input type="number" class="add-padding" label="Enter width of the rectangle" onchange={widthChangeHandler}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="12"  >
+            <lightning-input type="number" class="add-padding" label="Enter height of the rectangle" onchange={heightChangeHandler}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="12"  >
+            <lightning-input type="number" class="add-padding" label="Enter diagonal1 for rombus" onchange={diagonal1ChangeHandler}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="12"  >
+            <lightning-input type="number" class="add-padding" label="Enter diagonal2 for rombus" onchange={diagonal2ChangeHandler}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="12"  >
+            <div class="buttons-container">
+                <lightning-button label="Square" icon-position="right" onclick={calculateSquareAreaHandler}></lightning-button>
+                <lightning-button label="Rectangle" icon-position="center" onclick={calculateRectangleHandler}></lightning-button>
+                <lightning-button label="Rhombus" icon-position="left" onclick={calculateRhombusAreaHandler}></lightning-button>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class="add-padding" >
+           <lightning-formatted-text class="add-padding" value={currentOutput}></lightning-formatted-text>
+        </lightning-layout-item>
+    </lightning-card>
+</template>

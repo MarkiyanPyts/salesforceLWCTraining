@@ -1,0 +1,10 @@
+.add-padding {
+    padding: 20px;
+}
+
+.buttons-container {
+    padding-left: 20px;
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}

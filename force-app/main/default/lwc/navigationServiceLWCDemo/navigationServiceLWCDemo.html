@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Navigation Service in Lightning Web components">
+        <lightning-card title="Navigation to record pages">
+            <lightning-button label="New REcord Page" onclick={navigateToNewRecordPage}></lightning-button>
+            <lightning-button label="Edit REcord Page" onclick={editRecordPage}></lightning-button>
+            <lightning-button label="View REcord Page" onclick={viewRecordPage}></lightning-button>
+        </lightning-card>
+    </lightning-card>
+    <lightning-card title="Navigate To List Views">
+        <lightning-button-group>
+            <lightning-button label="Account Recent View" onclick={navigateToAccountRecentView}></lightning-button>
+            <lightning-button label="Related List View" onclick={navigateToRelatedListView}></lightning-button>
+        </lightning-button-group>
+    </lightning-card>
+
+    <lightning-card title="Navigate To Object Views">
+        <lightning-button-group>
+            <lightning-button label="Account Object Page" onclick={navigateToAccountObject}></lightning-button>
+            <lightning-button label="Contact Page" onclick={navigateToContactObject}></lightning-button>
+        </lightning-button-group>
+    </lightning-card>
+    <lightning-card title="Navigate To Web Page">
+        <lightning-button-group>
+            <lightning-button label="Web Page" onclick={navigateToWebPage}></lightning-button>
+        </lightning-button-group>
+    </lightning-card>
+    <lightning-card title="Navigate Standard Home Tabs">
+        <lightning-button-group>
+            <lightning-button label="Home Page" onclick={navigateToHomePage}></lightning-button>
+            <lightning-button label="Chatter Page" onclick={navigateToChatter}></lightning-button>
+        </lightning-button-group>
+    </lightning-card>
+</template>

@@ -1,0 +1,7 @@
+:host {
+    --lwc-background: aqua;
+}
+
+.lgc-bg {
+    background-color: var(--lwc-background);
+}
